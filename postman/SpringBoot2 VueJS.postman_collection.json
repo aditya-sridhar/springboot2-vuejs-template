@@ -1,0 +1,58 @@
+{
+	"info": {
+		"name": "SpringBoot2 VueJS",
+		"_postman_id": "8ea2c0ce-24c6-dff8-dd33-9d0072b0a23e",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/customerlist",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "localhost:8080/customerlist",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customerlist"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/customerdetailsapi",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : \"3\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/customerdetailsapi",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customerdetailsapi"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

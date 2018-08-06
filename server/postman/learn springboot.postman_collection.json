@@ -1,0 +1,88 @@
+{
+	"info": {
+		"name": "learn springboot",
+		"_postman_id": "f0845c31-e5d2-3037-6387-879deffe8f32",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/test/helloworld",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "localhost:8080/test/helloworld",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"test",
+						"helloworld"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/test/helloworld with param",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "localhost:8080/test/helloworld?name=aditya",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"test",
+						"helloworld"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "aditya",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/test/mirrorpayload",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\" : \"Aditya\",\n\t\"id\" : 123456\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/test/mirrorpayload",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"test",
+						"mirrorpayload"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
